@@ -5,8 +5,9 @@ def to_num():
     try:
         fst = int(fst)
         snd = int(snd)
-        print("Success!")
     except ValueError:
         print("Please, enter the numbers!!!")
+    else:
+        print("Success!")
 
 to_num()

@@ -3,9 +3,10 @@ def mult_errors():
     try:
         for i in range(10):
             l_of_nums[i] = int(l_of_nums[i])
-        print("Success")
     except ValueError:
         print("You've entered not only nums!!!")
     except IndexError:
         print("You've reached the boarders of index, enter the list of following length!!!")
+    else:
+        print("Success")
 mult_errors()
